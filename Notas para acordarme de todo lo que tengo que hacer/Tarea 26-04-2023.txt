@@ -1,0 +1,19 @@
+Clonar mi repositorio de github en mi casa y evidenciar que pude lograrlo. (tener en cuenta que para clonar mi repositorio tengo que hacer estos 2 comandos 
+git fetch (sirve para ver si hay cosas por actualizar)
+git pull (sirve para actualizar todo lo que tenga dentro del repositorio))
+
+Hacer los ejercicios que me hayan dejado hoy, y rehacer los que vea convenientes y empezar a comentar cada codigo hecho por mi además de organizar todo el repositorio para tenerlo
+en orden.
+
+para hacer todo eso tengo que seguir los siguientes pasos:
+
+1- descargar git (remoto) en mi pc para poder utilizarlo
+
+2- ya con git descargado, descargar ahora git bash o usar cmd o powershell
+
+3- hacer uso de el comando git init en la carpeta en la cual voy a tener mi repositorio
+
+4- ya con git init hecho, imprimire mis credenciales de git en mi computadora con el comando git config --global user.name "" y user.email 
+
+5- ya hecho eso, tendré que hacer uso del comando git config --list 
+
