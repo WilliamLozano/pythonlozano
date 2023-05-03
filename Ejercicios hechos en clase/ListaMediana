@@ -1,0 +1,29 @@
+# utilizando el codigo de el profesor saque la suma, promedio, max, min, mediana, desviacion estandar
+
+import random
+lista = []
+mediana = []
+tam = random.randint(10,20)
+print(tam)
+
+
+for i in range(tam):
+    num=random.randrange(100)
+    lista.append(num)
+
+print(lista)
+
+mediana = 0
+
+lista_ordenada = sorted(lista)
+longitud = len(lista_ordenada)
+
+if longitud % 2 == 0:
+    indice1 = longitud // 2 - 1
+    indice2 = longitud // 2
+    mediana = (lista_ordenada[indice1] + lista_ordenada[indice2]) / 2
+else:
+    indice = longitud // 2
+    mediana = lista_ordenada[indice]
+
+print("La mediana de la lista es:", mediana)
