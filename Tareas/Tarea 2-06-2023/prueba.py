@@ -13,8 +13,6 @@ print(invertir_lista(mi_lista))
 
 #Ejemplo de la importación para diccionarios
 
-from modulo_diccionarios import *
-
 mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"}
 
 print(obtener_claves(mi_diccionario))
@@ -24,3 +22,6 @@ agregar_elemento(mi_diccionario, "ocupacion", "estudiante")
 print(mi_diccionario)
 eliminar_elemento(mi_diccionario, "ciudad")
 print(mi_diccionario)
+
+
+
