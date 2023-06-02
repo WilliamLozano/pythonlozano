@@ -80,9 +80,38 @@ def Buscar_numero(lista, numero):
     else:
         print("El número", numero, "no se encuentra en el arreglo.")
 
+def Calcular_fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return Calcular_fibonacci(n-1) + Calcular_fibonacci(n-2)
+
+def Calcular_factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * Calcular_factorial(n-1)
+
+def Encontrar_primos(n):
+    primos = []
+    for num in n:
+        if num > 1:
+            es_primo = True
+            for i in range(2, num):
+                if (num % i) == 0:
+                    es_primo = False
+                    break
+            if es_primo:
+                primos.append(num)
+    
+    print("Números primos encontrados:", primos)
+    print("Cantidad de números primos:", len(primos))
+
 def Mostrar_menu(lista):
     Opcion = ""
-    while Opcion != "K":
+    while Opcion != "N":
         print("\n--- Menú ---")
         print("A - Imprimir arreglo original (El primero que se generó) ")
         print("B - Suma")
@@ -94,7 +123,10 @@ def Mostrar_menu(lista):
         print("H - Moda")
         print("I - Mediana")
         print("J - Buscar")
-        print("K - Salir del programa...") 
+        print("K - Fibonacci")
+        print("L - Factoriales")
+        print("M - Encontrar Primos")
+        print("N - Salir del programa...") 
         break
 
     Opcion = input("Seleccione una Opción : ")
@@ -121,6 +153,12 @@ def Mostrar_menu(lista):
         numero = int(input("Ingresa el número que deseas buscar: "))
         Buscar_numero(lista, numero)
     elif Opcion == "K":
+        Calcular_fibonacci(lista)
+    elif Opcion == "L":
+        Calcular_factorial(lista)
+    elif Opcion == "M":
+        Encontrar_primos(lista) 
+    elif Opcion == "N":
             print("Saliendo del programa... ", end="")
     else:
         print("La letra digitada en el menú es erronea.")             
