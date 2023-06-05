@@ -1,4 +1,5 @@
 
+
     
 class curso():
     def __init__ (self,estudiante, clase, curso):
@@ -21,20 +22,27 @@ class curso():
     def setCurso(self, curso):
         self.__curso=curso
 
-    def remove(self):
-        del(self.__curso)
+    def eliCurso(self,curso):
+        self.curso = curso
+        for i in (self.__curso):
+            if curso == i:
+                return self.__curso.remove (curso)
 
 a1 = curso("pedro", "B12", "sexto")
+
 print(a1.getEstudiante())
 print(a1.getClase())
 print(a1.getCurso())
 print("//////////////////////")
-a1.setCurso("septimo")
-print(a1.getD2())
+print (a1.getCurso())
+print (a1.eliCurso("sexto"))
+print (a1.getCurso())
+
 #crear un metodo que muestre todos los datos del objeto  x
 #agregar un atributo estudiante y ese estudiante agregarle una lista llamada curso x
 #crear un metodo que sirva para insertar cursos x
 #crear un metodo que sirva para consultar los cursos x
 #crear un metodo que sirva para eliminar un curso, con remove o no
-#crear un método que sirva para modificar un curso X 
-
+#crear un método que sirva para
+# 
+#  modificar un curso X 
