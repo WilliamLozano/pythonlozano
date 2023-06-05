@@ -50,33 +50,36 @@ class persona():
     def setDocumento(self, documento):
         self.__documento=documento
     
-    def getDatos(self, nombre, documento):
-        return self.__nombre and self.__documento
+    # def getDatos(self, nombre, documento):
+    #     return self.__nombre and self.__documento
+    
     
 
 
 p1=persona("Ana", 123)
 
 p1.setNombre("Pedro")
-# print(p1.getNombre())
+print(p1.getNombre())
 
 p1.setDocumento(321)
-# print(p1.getDocumento())
-
-p1.getDatos(p1.getNombre, p1.getDocumento)
+print(p1.getDocumento())
 
 #//////////////////////////////////////////////////
 
-# p2=persona("Carlos", 987)
+p2=persona("Carlos", 987)
 
-# p2.setNombre("Juan")
-# print(p2.getNombre())
+p2.setNombre("Juan")
+print(p2.getNombre())
 
-# p2.setDocumento(687)
-# print(p2.getDocumento())
+p2.setDocumento(687)
+print(p2.getDocumento())
 
 
 
 
 #crear un metodo que muestre todos los datos del objeto 
 #agregar un atributo estudiante y ese estudiante agregarle una lista llamada curso
+#crear un metodo que sirva para insertar cursos 
+#crear un metodo que sirva para consultar los cursos
+#crear un metodo que sirva para eliminar un curso, con remove o no
+#crear un método que sirva para modificar un curso
