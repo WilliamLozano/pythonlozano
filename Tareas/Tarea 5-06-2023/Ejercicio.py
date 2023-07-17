@@ -61,7 +61,7 @@ class Empleado:
     def calcular_promedio_salarios():
         return Empleado.suma / Empleado.contador
 
-salario_minimo = 1200000
+salario_minimo = 1160000
 
 # Crear un empleado
 empleado1 = Empleado("Juan Perez", "Gerente", 4300000)
@@ -70,17 +70,19 @@ empleado1 = Empleado("Juan Perez", "Gerente", 4300000)
 print(empleado1.get_nombre())  # Output: Juan Perez
 
 # Obtener el salario por hora del empleado
-print(empleado1.calcular_salario_hora())  # Output: 25.0
+print(empleado1.calcular_salario_hora())  # Output: 107500.0
 
 # Calcular el incremento de salario según el IPC
-print(empleado1.calcular_incremento_ipc())  # Output: 150.0
+print(empleado1.calcular_incremento_ipc())  # Output: 56416000.0
 
 # Calcular el salario con horas extras
-print(empleado1.calcular_salario_horas_extras(1))  # Output: 5050.0
+print(empleado1.calcular_salario_horas_extras(1))  # Output: 4407500.0
 
 # Visualizar la suma de los salarios
-print(Empleado.visualizar_suma_salarios())  # Output: 5000
+print(Empleado.visualizar_suma_salarios())  # Output: 4300000
 
 # Calcular el promedio de los salarios
-print(Empleado.calcular_promedio_salarios())  # Output: 5000.0
+print(Empleado.calcular_promedio_salarios())  # Output: 4300000.0
+
+
 

@@ -18,7 +18,7 @@ class empleado():
     def setCargo(self, cargo):
         self.__salario = cargo
 
-#////////////////////////////////////////////////////
+#/////////////////////////////////////////////////////
 
     def getSalario(self):
         return self.__salario
@@ -30,6 +30,13 @@ class empleado():
 
     def getDatos(self):
         return f"{self.__nombre, self.__cargo, self.__salario}"
+    
+#/////////////////////////////////////////////////////
+
+    #def calcSalario(self):
+        #A
+        
+        
 
 #Datos de prueba
 
